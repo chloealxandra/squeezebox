@@ -7,8 +7,7 @@ propshield motion detection triggers 3 ctrlins (2,3,4).
 
 PD patch interaction FM synthesis: 
 Motion:
+heading alters pitch (2)
 roll alters modulation index (4)
-heading alters attack/decay (2)
-
 electret microphone controls volume (1)
-
+pitch does not alter anything at this moment (3)

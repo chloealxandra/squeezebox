@@ -2,10 +2,12 @@ squeezebox is an opensource motion sensing, wind sensing, touch capactive teensy
 
 this project uses teensy v3.2 and prop shield as well as sparkfun electret microphone breakout board as it progresses it will also use touch capcitance. i have included an example patch to show proof of concept for motion + microphone. 
 
-electret mic is wired to A0 using a 10k potentiometer as a voltage divider. i use the arudino sound library RMS without an audioshield (see code for details)
-this sends midi on ctlin 1
+electret mic is wired to A0 using a 10k potentiometer as a voltage divider. Sparkfun Breakout board outputs ~1.65v, teensy analog input tops out at ~1.2v causing program crash.
 
-propshield motion detection triggers 3 ctrlins (2,3,4).
+This project uses the arudino sound library RMS without an audioshield (see code for details).
+RMS is sent as midi on ctlin 1(pd)
+
+Propshield motion detection triggers 3 ctrlins (2,3,4).
 
 PD patch interaction FM synthesis: 
 Motion:
